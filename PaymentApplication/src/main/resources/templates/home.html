@@ -1,0 +1,36 @@
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+
+.bottom-left {
+  position: absolute;
+  top: 60px;
+  left: 50px;
+  font-size: 25px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 50px;
+  font-size: 25px;
+}
+</style>
+<title>My Payment Application</title>
+</head>
+
+<body>
+<h2>Welcome to the Payment Application</h2>
+<div class="container">
+  <img src="background.jpg" alt="payment" style="width:100%;">
+<div class="bottom-left"><p><a th:href="@{/deposit}">Deposit</a></p></div><br>
+<div class="top-left"><p><a th:href="@{/payout}">Payout</a></p></div>
+</div>
+</body>
+</html>

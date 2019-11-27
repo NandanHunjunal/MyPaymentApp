@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+    xmlns:th="http://www.thymeleaf.org" 
+    xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<title>My Payment Application</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+</head>
+<body>
+<!-- 
+<span id='cwppButton'></span>
+<script src='https://www.paypalobjects.com/js/external/connect/api.js'></script>
+<script>
+paypal.use( ['login'], function (login) {
+  login.render ({
+    "appid":"AZoFxb19uUz7TsqJOeo3nJQ-6-2_NRnd8-DnX2F8wei7ILbZs0fnNA88Ok7Og7_PayBm63zTk1Lt1yfK",
+    "authend":"sandbox",
+    "scopes":"openid",
+    "containerid":"cwppButton",
+    "responseType":"code",
+    "locale":"en-us",
+    "buttonType":"CWP",
+    "buttonShape":"pill",
+    "buttonSize":"lg",
+    "fullPage":"true",
+    "returnurl":"sucess.html"
+  });
+});
+</script>
+-->
+
+<h2>My Payment App</h2>
+      <form method="post" th:action="@{/login}">
+        <input type="submit" value="Register/Login" class="btn">
+      </form>
+</body>
+</html>
